@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import Profil from './profile/Profil';
 function App() {
+  const fon = (full_name) => {
+    alert(full_name)
+  }
+
+
+  const mystyle={
+    color:"green" ,
+    padding:"20px"
+    
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Profil full_name={"  Houssem  "}bio ={" heloo  "}profession={" javascript "} mystyle={mystyle} fon={fon} />
+        <center><img src="img1.jpg" border="7px" /></center>
     </div>
   );
 }
